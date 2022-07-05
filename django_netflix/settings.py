@@ -82,8 +82,11 @@ WSGI_APPLICATION = 'django_netflix.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'Netflix_clone',
+        'USER': 'Admin_netflix_clone',
+        'PASSWORD': 'unix11',
+        'HOST': 'localhost'
     }
 }
 
