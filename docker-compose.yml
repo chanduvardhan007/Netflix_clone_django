@@ -1,8 +1,8 @@
-version: '3'
+version: '3.4'
 services:
   web:
-    build: .
-    command: bash -c "python manage.py migrate && python manage.py runserver 0.0.0.0:8000"
+    image: 205114761821.dkr.ecr.us-west-1.amazonaws.com/django_app1:latest
+    command: bash -c "python manage.py migrate && python manage.py runserver  0.0.0.0:8000"
     ports:
       - "8000:8000"
     depends_on:
